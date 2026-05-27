@@ -1,1 +1,1 @@
-Figma: https://www.figma.com/design/U3npVeDilAu5zXaLnoUa2h/Instagram-Redesign--Community-?node-id=0-1&t=QgYzny0mpZiiOzcA-1
+Figma: https://www.figma.com/design/46XCp3RKgRfBCbbAUjsbuw/%C4%B0nstagram-Modern-Web-Design--Community-?node-id=0-1&t=VxqBbvL9pcPscBuZ-1
