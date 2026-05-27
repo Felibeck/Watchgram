@@ -1,6 +1,6 @@
 import type { Post } from "../../types/post"
 
-const Post = ( {foto, cantLikes}:Post ) =>
+const Post = ( {foto, cantLikes}:Post) =>
 {
     return (
         <>
