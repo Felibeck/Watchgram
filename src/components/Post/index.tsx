@@ -1,13 +1,28 @@
-import type { Post } from "../../types/post"
+import type { Post, PostPropsType } from "../../types/post"
 
-const Post = ( {foto, cantLikes}:Post) =>
+const Post = ({post, usuario} : PostPropsType) =>
 {
     return (
         <>
-            <img src={foto} alt="postFoto" />
+{/* foto/s post */}
+            <img src={post.foto} alt="postFoto" />
 
+{/* info de usuario */}
+            <img src={usuario.fotoPerfil} alt="userFoto" />
+            <p>{usuario.username}</p>
             
-            <p>{cantLikes}</p>
+{/* botones de accion */}
+            <div>
+
+            {/* falta svg corazon */}
+            <p>{post.cantLikes}</p>
+
+            {/* falta svg comentario */}
+            <p>{post.comentarios.length}</p>
+
+            {/* falta svg share */}
+                
+            </div>
         </>
     )
 }
