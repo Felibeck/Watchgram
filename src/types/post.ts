@@ -7,15 +7,14 @@ export type Post = {
     comentarios: string[];
 }
 
-export type PostDetalle = {
-    Post && 
-    comentarios: Comentario[],
-    descripcion: string,
-    fecha: Date,
+export type PostDetalle = Omit<Post, "comentarios"> & {
+    comentarios: Comentario[];
+    descripcion: string;
+    fecha: Date;
 }
-
 
 export type PostPropsType = {
     post: Partial<Post>;
     usuario: Partial<Usuario>;
 }
+

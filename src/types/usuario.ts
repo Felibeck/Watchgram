@@ -6,3 +6,8 @@ export type Usuario = {
     cantSeguidores: number;
     cantSeguidos: number;
 }
+
+export type usuarioHistoria = {
+    fotoPerfil: string;
+    username: string;
+}
