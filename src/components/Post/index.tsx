@@ -1,12 +1,12 @@
-import type { PostPropsType } from "../../types/post"
+import type { PostType } from "../../types/post"
 
-const Post = ({post, usuario} : PostPropsType) => {
+const Post = ({post}: {post: PostType}) => {
     return (
         <>
             {/* Info de usuario */}
             <div>
-                <img src={usuario.fotoPerfil} alt="userFoto" />
-                <p>{usuario.username}</p>
+                <img src={post.usuario.fotoPerfil} alt="userFoto" />
+                <p>{post.usuario.username}</p>
             </div>
 
             {/* Foto del post */}

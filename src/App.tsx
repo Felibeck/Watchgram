@@ -2,14 +2,20 @@ import { useState } from 'react'
 import './App.css'
 import Post from './components/Post'
 import Historia from './components/Historia';
+import SearchBar from './components/SearchBar';
 
 function App() {
-  const [count, setCount] = useState(0);
+
   const post = {
     foto:"public\fotoIgPruea.jpg", 
     cantLikes:5,
-    comentarios: ["Muy bueno", "Gracias"]
+    comentarios: ["Muy bueno", "Gracias"],
+    usuario: {
+      username:"ilanBleicher",
+      fotoPerfil:"public\fotoIgPruea.jpg"
+    }
   };
+
   const usuario = 
   {
     username:"ilanBleicher",
@@ -18,9 +24,12 @@ function App() {
 
   return (
     <>
-      <Post post = {post} usuario = {usuario} />
+      <SearchBar/>
+
+      <Post post = {post}/>
 
       <Historia fotoPerfil = {usuario.fotoPerfil} username = {usuario.username} />
+
     </>
   )
 }

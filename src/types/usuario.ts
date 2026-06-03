@@ -1,4 +1,5 @@
 export type Usuario = {
+    nombreCompleto:string;
     username: string;
     fotoPerfil: string;
     biografia: string;
