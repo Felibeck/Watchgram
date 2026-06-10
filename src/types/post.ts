@@ -1,4 +1,4 @@
-import type { Comentario } from "./comentario";
+import type { Comentario } from "./comentarioType";
 import type { Usuario } from "./usuario";
 
 export type PostType = {

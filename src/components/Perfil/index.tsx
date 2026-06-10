@@ -23,3 +23,5 @@ const Perfil = ({ usuario }: { usuario: Usuario }) => {
     )
 
 }
+
+export default Perfil
