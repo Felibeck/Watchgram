@@ -1,16 +1,5 @@
-/* Feed layout: center column */
 .feed {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 16px;
-	padding: 24px 12px;
-	background: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
-
-.post-wrapper {
-	width: 100%;
-	max-width: 680px;
-	cursor: pointer;
-}
-

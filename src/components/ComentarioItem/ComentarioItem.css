@@ -1,7 +1,42 @@
-/* Comentario item styles */
-.comentario { display:flex; flex-direction:column; gap:6px; padding:8px 0; border-bottom:1px solid #f0f0f0 }
-.comentario .user { display:flex; align-items:center; gap:8px }
-.foto-user { width:34px; height:34px; border-radius:50%; object-fit:cover }
-.user-name { font-weight:600 }
-.msj { margin:0; color:#222 }
-.cantLikes { color:#888; font-size:13px; align-self:flex-end }
+.comentario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 10px 14px;
+  gap: 12px;
+}
+
+.comentario .user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.comentario .foto-user {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comentario .user p {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.comentario .msj {
+  font-size: 14px;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.comentario .cantLikes {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

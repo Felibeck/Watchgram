@@ -1,59 +1,69 @@
-/* Post component styles - replicar aspecto de feed */
 .post {
-	background: #fff;
-	border: 1px solid #dbdbdb;
-	border-radius: 8px;
-	overflow: hidden;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: scale(1.01);
 }
 
 .post-header {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
 }
 
-.post-user-img {
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 2px solid #fff;
+.post-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.post-username {
-	font-weight: 600;
-	color: #111;
+.post-header p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
-.post-image {
-	width: 100%;
-	display: block;
-	object-fit: cover;
-	max-height: 640px;
-	background: #000;
+.post-foto {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
 }
 
-.post-actions {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	padding: 10px 12px;
+.post-acciones {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
 }
 
-.post-actions .icon {
-	width: 24px;
-	height: 24px;
-	stroke: #111;
-	cursor: pointer;
+.post-acciones svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text-primary);
+  cursor: pointer;
 }
 
-.comment-action { display:flex; align-items:center; gap:6px }
-.comment-count { color:#333 }
+.post-acciones svg:hover {
+  color: var(--accent);
+}
+
+.post-acciones span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
 
 .post-likes {
-	font-weight: 600;
-	padding: 0 12px 12px;
+  padding: 0 12px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
 }
-

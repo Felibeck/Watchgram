@@ -1,0 +1,90 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  width: 700px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal-header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.modal-body {
+  display: flex;
+  height: 480px;
+}
+
+.modal-foto {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.modal-comentarios {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.modal-comentarios textarea {
+  margin-top: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+  padding: 10px;
+  resize: none;
+  height: 80px;
+  outline: none;
+}
+
+.modal-comentarios textarea::placeholder {
+  color: var(--text-secondary);
+}

@@ -48,7 +48,7 @@ function App() {
 
       {/* Stories */}
       <div className="stories-container">
-        <h3>STORÏES</h3>
+        <h3>STORIES</h3>
         <div className="stories-list">
           {historias.map((h, i) => (
             <Historia key={i} fotoPerfil={h.fotoPerfil} username={h.username} />
