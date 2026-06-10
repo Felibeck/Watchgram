@@ -3,8 +3,12 @@ import './App.css'
 import Post from './components/Post'
 import Historia from './components/Historia';
 import SearchBar from './components/SearchBar';
+import { Link } from 'react-router-dom';
+
 
 function App() {
+
+
 
   const post = {
     foto:"public\fotoIgPruea.jpg", 
@@ -24,6 +28,9 @@ function App() {
 
   return (
     <>
+      <Link to="/profile">Perfil</Link>
+
+
       <SearchBar/>
 
       <Post post = {post}/>
