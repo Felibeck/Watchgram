@@ -1,0 +1,31 @@
+/* Perfil screen styles */
+.perfil {
+	max-width: 900px;
+	margin: 24px auto;
+	padding: 16px;
+	background: #fff;
+	border-radius: 8px;
+}
+
+.perfil-header {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.perfil-img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.perfil-info { flex:1 }
+.perfil-name { margin:0; font-size:20px }
+.perfil-username { margin:4px 0; color:#666 }
+.perfil-bio { margin:8px 0; color:#333 }
+.perfil-stats { display:flex; gap:16px; color:#333; margin-top:8px }
+
+.perfil-actions { margin-top:16px }
+.editar { background:#fff; border:1px solid #dbdbdb; padding:8px 12px; border-radius:6px }
+

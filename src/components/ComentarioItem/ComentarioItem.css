@@ -1,0 +1,7 @@
+/* Comentario item styles */
+.comentario { display:flex; flex-direction:column; gap:6px; padding:8px 0; border-bottom:1px solid #f0f0f0 }
+.comentario .user { display:flex; align-items:center; gap:8px }
+.foto-user { width:34px; height:34px; border-radius:50%; object-fit:cover }
+.user-name { font-weight:600 }
+.msj { margin:0; color:#222 }
+.cantLikes { color:#888; font-size:13px; align-self:flex-end }

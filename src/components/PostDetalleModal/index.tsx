@@ -1,6 +1,7 @@
 import type { PostType } from "../../types/post"
 import ComentarioItem from "../ComentarioItem"
 import type { Comentario } from "../../types/comentarioType"
+import './PostDetalleModal.css'
 
 const comentariosFicticios: Comentario[] = [
   { msj: '¡Muy bueno!', cantLikes: 5, user: { username: 'user_name', fotoPerfil: '' } },
@@ -16,8 +17,8 @@ const PostDetalleModal = ({ post, onClose }: { post: PostType, onClose: () => vo
         <button className="modal-cerrar" onClick={onClose}>✕</button>
 
         <div className="modal-header">
-          <img src={post.usuario.fotoPerfil} alt="perfil" />
-          <span>@{post.usuario.username}</span>
+          <img src={post.usuario.fotoPerfil} alt="perfil" className="modal-header-img" />
+          <span className="modal-header-username">@{post.usuario.username}</span>
         </div>
 
         <div className="modal-body">
@@ -27,7 +28,7 @@ const PostDetalleModal = ({ post, onClose }: { post: PostType, onClose: () => vo
             {comentariosFicticios.map((c, i) => (
               <ComentarioItem key={i} msj={c.msj} cantLikes={c.cantLikes} user={c.user} />
             ))}
-            <textarea placeholder="Escribe aquí tu comentario..." />
+            <textarea className="comentario-textarea" placeholder="Escribe aquí tu comentario..." />
           </div>
         </div>
       </div>
